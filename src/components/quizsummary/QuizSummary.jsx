@@ -5,16 +5,17 @@ import "./QuizSummary.css";
 
 export const QuizSummary = () => {
   const { answers, restart, gameResult } = useQuizStore();
-  //restart, gameResult
-  // Calculate the number of correct answers
-  // const correctAnswers = answers.filter((answer) => answer.isCorrect).length;
   const navigate = useNavigate();
+
   return (
-    <div>
+    <div className="summary-container">
       <h2 className="quiz-header">Quiz Summary</h2>
-      {gameResult === "win" && <Confetti />}
+      {gameResult === "win" && 
+        <Confetti width={window.innerWidth} height={window.innerHeight} />}
       {gameResult === "win" ? (
-        <h3 className="result">🌟 Victory! Quiz mastery achieved! 👑</h3>
+        <h3 className="result">
+          🌟 Victory! Quiz mastery achieved! 👑
+        </h3>
       ) : (
         <h3 className="result">
           😉 So close! The crown is just a quiz away. 👑
@@ -26,10 +27,12 @@ export const QuizSummary = () => {
         {answers.map((answer) => {
           return (
             <li key={answer.questionId}>
-              {/* <strong>Question:</strong> */}
-
-              <p>{answer.question.questionText}</p>
-              <p style={{ color: answer.isCorrect ? "limegreen" : "red" }}>
+              <p>
+                {answer.question.questionText}
+              </p>
+              <p style={{ 
+                color: answer.isCorrect ? "limegreen" : "red" 
+                }}>
                 Your Answer: {answer.answer}
               </p>
               <p>
@@ -40,8 +43,6 @@ export const QuizSummary = () => {
           );
         })}
       </ul>
-
-      {console.log(gameResult)}
 
       <button
         className="restart-btn"

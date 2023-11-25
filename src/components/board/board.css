@@ -18,7 +18,6 @@ a {
   border: 6px solid white;
   background-color: #b3b2c0;
   border-radius: 2px;
-  /* font-family: Helvetica; */
   height: 5rem;
   width: 5rem;
   font-weight: bold;
@@ -74,15 +73,15 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
+  font-size: 150%;
   color: white;
   display: flex;
   place-content: center;
 }
 
 .circle {
-  width: 40px;
-  height: 40px;
+  width: 50%;
+  height: 50%;
   background: transparent;
   border-radius: 100%;
   border: 8px solid limegreen;

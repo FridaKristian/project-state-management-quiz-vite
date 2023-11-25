@@ -2,6 +2,14 @@ import { useState, useEffect } from "react";
 
 export const Timer = ({ time }) => {
   const [timeLeft, setTimeLeft] = useState(time);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+  
+    return () => clearTimeout(timer);
+  });
 
   const calculateTimeLeft = () => {
     return timeLeft - 1000;
@@ -20,14 +28,7 @@ export const Timer = ({ time }) => {
     }
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  });
-
+  
   let displayTime = displayTimeLeft(timeLeft);
 
   if(displayTime.seconds !== null){

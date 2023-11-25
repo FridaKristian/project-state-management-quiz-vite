@@ -12,7 +12,7 @@ export const routeCollection = (
     {/* This route leads to the element that displays when a user has entered an incorrect link/address */}
     <Route path="*" element={<PageNotFound />} />
 
-    {/* Dynamic route */}
+    {/* Dynamic route to each question */}
     <Route path="/quest/:id" element={<QuestionPage />} />
 
     {/* Route to the summary page */}

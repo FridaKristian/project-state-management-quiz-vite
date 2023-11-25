@@ -1,7 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import useQuestions from "../../stores/useQuestions";
+import { Link, useNavigate } from "react-router-dom";
 import useQuizStore from "../../stores/useQuestions";
+import useQuestions from "../../stores/useQuestions";
 import "./board.css";
 
 export const Board = () => {
@@ -127,7 +127,7 @@ export const Board = () => {
               style={{ pointerEvents: hasAnswer ? "none" : "" }}
             >
               <div className="a-question" key={question.id}>
-                <p>{question.id}</p>
+                {!hasAnswer && <p>{question.id}</p>}
 
                 {answers.length > 0 &&
                   answers.map((answer) =>

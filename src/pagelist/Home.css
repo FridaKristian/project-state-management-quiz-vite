@@ -1,3 +1,11 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
 .home-title {
   display: flex;
   justify-content: center;

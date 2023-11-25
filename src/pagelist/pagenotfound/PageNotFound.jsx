@@ -5,7 +5,9 @@ export const PageNotFound = () => {
   return (
     // This page is displayed if a link is incorrect
     <div className="page-not-found">
-      <h1 className="not-found-title">Oops, that page doesn&apos;t exist.💀</h1>
+      <h1 className="not-found-title">
+        Oops, that page doesn&apos;t exist.💀
+      </h1>
 
       {/* This is a link that leads the user back to the main page */}
       <Link to="/">
