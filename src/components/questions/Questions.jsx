@@ -14,7 +14,7 @@ export const Questions = ({ param }) => {
   const question = questions[param - 1];
   const qImageURL = question.qImage;
   const qOptions = question.options;
-  const timerInterval = 1000;
+  const timerInterval = 3000;
 
   const flipCard = () => {
     const timer = setTimeout(() => {
