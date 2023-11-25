@@ -1,6 +1,6 @@
 import { Questions } from "../../components/questions/Questions";
 import { useParams } from "react-router-dom";
-import "../../components/questions/Questions.css";
+import "../../components/questions/questions.css";
 
 export const QuestionPage = () => {
   const { id } = useParams();
