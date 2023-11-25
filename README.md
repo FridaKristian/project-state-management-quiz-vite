@@ -10,4 +10,4 @@ To brainstorm we used Figma where we gathered ideas and inspirational pictures. 
 
 ### View it live
 
-https://gilded-torrone-55f0ee.netlify.app/
+https://tic-tac-toe-quiz.netlify.app/
