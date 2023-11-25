@@ -6,7 +6,7 @@ const questions = [
     qImage: "/bone.png",
     questionText: "What’s the smallest bone in the body?",
     options: ["Patella", "Stirrup", "Thigh", "Teeny Peeny"],
-    correctAnswerIndex: 0,
+    correctAnswerIndex: 1,
   },
   {
     id: 2,

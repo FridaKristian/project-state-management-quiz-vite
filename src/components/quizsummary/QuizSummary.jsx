@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import useQuizStore from "../../stores/useQuestions";
-// import Confetti from "react-confetti";
+import Confetti from "react-confetti";
 import "./QuizSummary.css";
 
 export const QuizSummary = () => {
