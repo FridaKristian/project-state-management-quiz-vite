@@ -14,7 +14,7 @@ export const Questions = ({ param }) => {
   const question = questions[param - 1];
   const qImageURL = question.qImage;
   const qOptions = question.options;
-  const timerInterval = 3000;
+  const timerInterval = 1500;
 
   const flipCard = () => {
     const timer = setTimeout(() => {
@@ -42,7 +42,7 @@ export const Questions = ({ param }) => {
             src={qImageURL}
             alt="A picture to memorize and answer questions about"
           />
-          <Timer time={3000} />
+          <Timer time={timerInterval} />
         </>
       )}
       {!showImage && <p className="question-text">{question.questionText}</p>}

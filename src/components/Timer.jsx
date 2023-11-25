@@ -29,10 +29,11 @@ export const Timer = ({ time }) => {
   });
 
   let displayTime = displayTimeLeft(timeLeft);
-  if(displayTime.minutes != null){
-  let minutes = displayTime.minutes.toString().padStart(2, "0");
-  let seconds = displayTime.seconds.toString().padStart(2, "0");
 
-  return <p className="timer-display">{`⏱️ ${minutes}:${seconds}`}</p>;
+  if(displayTime.seconds !== null){
+    let minutes = displayTime.minutes.toString().padStart(2, "0");
+    let seconds = displayTime.seconds.toString().padStart(2, "0");
+
+    return <p className="timer-display">{`⏱️ ${minutes}:${seconds}`}</p>;
   }
 };
