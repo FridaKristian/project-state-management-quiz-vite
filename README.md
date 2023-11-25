@@ -8,6 +8,9 @@ We made a game within a game. So it's tic-tac-toe, but to place a circle you hav
 
 To brainstorm we used Figma where we gathered ideas and inspirational pictures. We mob programmed most of the time but also made branches for specific features.
 
+Zustand for global state management
+Built in React using React Router and multiple hooks
+
 ### View it live
 
 https://tic-tac-toe-quiz.netlify.app/
